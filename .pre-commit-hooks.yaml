@@ -1,0 +1,7 @@
+- id: vasp-lint
+  name: vasp-lint
+  description: Check VASP input files for common mistakes.
+  entry: vasp-lint
+  language: python
+  files: (^|/)(INCAR|POSCAR|KPOINTS|KPOINTS_OPT)$
+  pass_filenames: true
