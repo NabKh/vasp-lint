@@ -13,6 +13,7 @@ a POTCAR in a different order from the POSCAR, ENCUT too low for a cell relaxati
 Methfessel-Paxton smearing on a semiconductor, LASPH off for DFT+U on 3d metals, and more.
 
 - No dependencies: plain Python 3.9+, works on login nodes.
+- The same checks are available to MCP clients through [vasp-mcp](https://github.com/NabKh/vasp-mcp), which also reads VASP outputs (convergence, energies, forces, band gaps, crash causes).
 - Reads the files only; nothing is uploaded anywhere. POTCARs stay on your machine.
 - Works on one folder, a whole project tree, in CI or as a pre-commit hook.
 
