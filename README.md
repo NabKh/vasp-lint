@@ -1,7 +1,8 @@
 # vasp-lint
 
 [![tests](https://github.com/NabKh/vasp-lint/actions/workflows/tests.yml/badge.svg)](https://github.com/NabKh/vasp-lint/actions/workflows/tests.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/NabKh/vasp-lint/blob/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/vasp-lint)](https://pypi.org/project/vasp-lint/)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 
 Check VASP inputs (INCAR, POSCAR, POTCAR, KPOINTS) for common mistakes **before** you submit the job.
@@ -20,7 +21,7 @@ Methfessel-Paxton smearing on a semiconductor, LASPH off for DFT+U on 3d metals,
 ## Install
 
 ```bash
-pip install git+https://github.com/NabKh/vasp-lint
+pip install vasp-lint
 ```
 
 ## Use
@@ -78,7 +79,7 @@ for f in lint("relax"):
 ```yaml
 repos:
   - repo: https://github.com/NabKh/vasp-lint
-    rev: main
+    rev: v0.1.0
     hooks:
       - id: vasp-lint
 ```
